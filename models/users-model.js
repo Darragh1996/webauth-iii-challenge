@@ -9,7 +9,7 @@ function findBy(filter) {
 }
 
 function add(user) {
-  return db("users".insert)(user);
+  return db("users").insert(user);
 }
 
 function findById(id) {
@@ -18,10 +18,9 @@ function findById(id) {
     .first();
 }
 
-module.exports -
-  {
-    find,
-    findBy,
-    add,
-    findById
-  };
+module.exports = {
+  find,
+  findBy,
+  add,
+  findById
+};
